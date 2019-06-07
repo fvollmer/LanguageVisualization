@@ -2,7 +2,7 @@
 <model ref="r:8c4a9cc4-667c-41ac-9b1e-f1adb868870e(jetbrains.mps.langvisualization.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -210,9 +210,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -222,8 +222,8 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -1563,9 +1563,11 @@
           <node concept="1Wc70l" id="11wG4RCmKUd" role="3clFbw">
             <node concept="2OqwBi" id="11wG4RCmLX7" role="3uHU7w">
               <node concept="1PxgMI" id="11wG4RCmLEB" role="2Oq$k0">
-                <ref role="1m5ApE" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                 <node concept="37vLTw" id="11wG4RCmL4g" role="1m5AlR">
                   <ref role="3cqZAo" node="2XCiOPuatIu" resolve="concept" />
+                </node>
+                <node concept="chp4Y" id="1Tpo3lyPi3M" role="3oSUPX">
+                  <ref role="cht4Q" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                 </node>
               </node>
               <node concept="3TrcHB" id="11wG4RCmMnS" role="2OqNvi">
@@ -2060,13 +2062,13 @@
         </node>
         <node concept="3clFbJ" id="5vcv3fOpWP1" role="3cqZAp">
           <node concept="3clFbS" id="5vcv3fOpWP4" role="3clFbx">
-            <node concept="34ab3g" id="5vcv3fOpXHQ" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="5vcv3fOpXXB" role="34bqiv">
-                <node concept="37vLTw" id="5vcv3fOpXZ0" role="3uHU7w">
+            <node concept="RRSsy" id="1Tpo3lyRzKa" role="3cqZAp">
+              <property role="RRSoG" value="info" />
+              <node concept="3cpWs3" id="1Tpo3lyRzK$" role="RRSoy">
+                <node concept="37vLTw" id="1Tpo3lyRzK_" role="3uHU7w">
                   <ref role="3cqZAo" node="1CGv0Ews$rl" resolve="concept" />
                 </node>
-                <node concept="Xl_RD" id="5vcv3fOpXHS" role="3uHU7B">
+                <node concept="Xl_RD" id="1Tpo3lyRzKA" role="3uHU7B">
                   <property role="Xl_RC" value="Found no behavior for concept " />
                 </node>
               </node>
@@ -2080,22 +2082,22 @@
           </node>
           <node concept="9aQIb" id="5vcv3fOq0gl" role="9aQIa">
             <node concept="3clFbS" id="5vcv3fOq0gm" role="9aQI4">
-              <node concept="34ab3g" id="5vcv3fOq0jc" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="3cpWs3" id="5vcv3fOq0jd" role="34bqiv">
-                  <node concept="37vLTw" id="5vcv3fOq0je" role="3uHU7w">
+              <node concept="RRSsy" id="1Tpo3lyRzTz" role="3cqZAp">
+                <property role="RRSoG" value="info" />
+                <node concept="3cpWs3" id="1Tpo3lyRzU1" role="RRSoy">
+                  <node concept="37vLTw" id="1Tpo3lyRzU2" role="3uHU7w">
                     <ref role="3cqZAo" node="1CGv0Ews$rl" resolve="concept" />
                   </node>
-                  <node concept="3cpWs3" id="5vcv3fOq0DH" role="3uHU7B">
-                    <node concept="3cpWs3" id="5vcv3fOq0Vv" role="3uHU7B">
-                      <node concept="37vLTw" id="5vcv3fOq0Xa" role="3uHU7w">
+                  <node concept="3cpWs3" id="1Tpo3lyRzU3" role="3uHU7B">
+                    <node concept="3cpWs3" id="1Tpo3lyRzU4" role="3uHU7B">
+                      <node concept="37vLTw" id="1Tpo3lyRzU5" role="3uHU7w">
                         <ref role="3cqZAo" node="11wG4RCnS1v" resolve="behavior" />
                       </node>
-                      <node concept="Xl_RD" id="5vcv3fOq0DN" role="3uHU7B">
+                      <node concept="Xl_RD" id="1Tpo3lyRzU6" role="3uHU7B">
                         <property role="Xl_RC" value="Found behavior " />
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="5vcv3fOq0DP" role="3uHU7w">
+                    <node concept="Xl_RD" id="1Tpo3lyRzU7" role="3uHU7w">
                       <property role="Xl_RC" value=" for concept " />
                     </node>
                   </node>

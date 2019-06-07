@@ -2,7 +2,7 @@
 <model ref="r:1b807486-772b-48bf-99bc-702af23b6d91(jetbrains.mps.generatorvisualization.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -147,9 +147,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -254,13 +254,13 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="6nIO4pkc_tE" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="2OqwBi" id="6nIO4pkc_y0" role="34bqiv">
-            <node concept="37vLTw" id="6nIO4pkc_wC" role="2Oq$k0">
+        <node concept="RRSsy" id="1Tpo3lyQCPA" role="3cqZAp">
+          <property role="RRSoG" value="info" />
+          <node concept="2OqwBi" id="1Tpo3lyQCRs" role="RRSoy">
+            <node concept="37vLTw" id="1Tpo3lyQCRt" role="2Oq$k0">
               <ref role="3cqZAo" node="1bbuGTsMfaD" resolve="graph" />
             </node>
-            <node concept="liA8E" id="6nIO4pkc_HS" role="2OqNvi">
+            <node concept="liA8E" id="1Tpo3lyQCRu" role="2OqNvi">
               <ref role="37wK5l" to="grvc:6xkj9mMqN7" resolve="toString" />
             </node>
           </node>

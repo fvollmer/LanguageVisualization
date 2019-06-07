@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="d2a1d976-43a2-462f-ac3a-9b258ced839d" name="com.mbeddr.mpsutil.multilingual.baseLanguage" version="0" />
     <use id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring" version="0" />
@@ -183,7 +183,7 @@
           <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$f5U" id="5vcv3fOs9Io" role="m$_yh">
+      <node concept="m$f5U" id="1Tpo3lyQz3d" role="m$_yh">
         <ref role="m$f5T" node="5vcv3fOs9Ii" resolve="LanguageVisualization" />
       </node>
       <node concept="m$_yC" id="5vcv3fOs9Ip" role="m$_yJ">
