@@ -115,14 +115,10 @@
   </registry>
   <node concept="1l3spW" id="5vcv3fOs9I5">
     <property role="TrG5h" value="LanguageVisualization" />
-    <property role="2DA0ip" value="../../build/" />
+    <property role="2DA0ip" value="../../" />
     <node concept="398rNT" id="3TfYjgfu2Yv" role="1l3spd">
       <property role="TrG5h" value="project_root" />
-      <node concept="55IIr" id="3TfYjgfu2YC" role="398pKh">
-        <node concept="2Ry0Ak" id="3TfYjgfu2YF" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-        </node>
-      </node>
+      <node concept="55IIr" id="3TfYjgfu2YC" role="398pKh" />
     </node>
     <node concept="10PD9b" id="5vcv3fOs9I6" role="10PD9s" />
     <node concept="3b7kt6" id="5vcv3fOs9I7" role="10PD9s" />
