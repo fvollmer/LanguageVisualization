@@ -2,16 +2,16 @@
 <model ref="r:1b807486-772b-48bf-99bc-702af23b6d91(jetbrains.mps.generatorvisualization.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="568b" ref="r:8c4a9cc4-667c-41ac-9b1e-f1adb868870e(jetbrains.mps.langvisualization.behavior)" />
-    <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="grvc" ref="b4d28e19-7d2d-47e9-943e-3a41f97a0e52/r:e4b7e230-de2a-46ac-9f53-996b361d25ef(com.mbeddr.mpsutil.plantuml.node/com.mbeddr.mpsutil.plantuml.node.behavior)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="t69c" ref="r:0a67e63b-d7ed-48c9-9fd4-d6d1ced37ad3(jetbrains.mps.langvisualization.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
@@ -19,12 +19,12 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="1i04" ref="r:3270011d-8b2d-4938-8dff-d256a759e017(jetbrains.mps.lang.behavior.structure)" />
     <import index="2r67" ref="r:12b75774-ad08-4482-bae3-756b26633092(jetbrains.mps.console.ideCommands.util)" />
-    <import index="i6ta" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.impl.plan(MPS.Core/jetbrains.mps.generator.impl.plan@java_stub)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="icf3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="n55e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.language(MPS.Core/jetbrains.mps.smodel.language@java_stub)" implicit="true" />
+    <import index="tft2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.impl.plan(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="r99j" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.generator.runtime(MPS.Core/)" />
     <import index="iopq" ref="r:9ac9714f-ec8a-4c8c-9b59-e3a640ef47fb(jetbrains.mps.generatorvisualization.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -48,9 +48,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
         <child id="1188220173759" name="item" index="2BsfMF" />
       </concept>
@@ -166,8 +163,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -261,11 +268,11 @@
         <node concept="3clFbF" id="5UkVmFuu09J" role="3cqZAp">
           <node concept="2OqwBi" id="5UkVmFuu09K" role="3clFbG">
             <node concept="10M0yZ" id="5UkVmFuu09L" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5UkVmFuu09M" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2OqwBi" id="5UkVmFuu09N" role="37wK5m">
                 <node concept="37vLTw" id="5UkVmFuu09O" role="2Oq$k0">
                   <ref role="3cqZAo" node="1bbuGTsMfaD" resolve="graph" />
@@ -420,11 +427,11 @@
           <node concept="3cpWsn" id="6nIO4pkc0m4" role="3cpWs9">
             <property role="TrG5h" value="plan" />
             <node concept="3uibUv" id="6nIO4pkc0m5" role="1tU5fm">
-              <ref role="3uigEE" to="i6ta:~GenerationPlan" resolve="GenerationPlan" />
+              <ref role="3uigEE" to="tft2:~GenerationPlan" resolve="GenerationPlan" />
             </node>
             <node concept="2ShNRf" id="6nIO4pkc0tg" role="33vP2m">
               <node concept="1pGfFk" id="6nIO4pkc0$E" role="2ShVmc">
-                <ref role="37wK5l" to="i6ta:~GenerationPlan.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel)" resolve="GenerationPlan" />
+                <ref role="37wK5l" to="tft2:~GenerationPlan.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModel)" resolve="GenerationPlan" />
                 <node concept="37vLTw" id="6nIO4pkckKg" role="37wK5m">
                   <ref role="3cqZAo" node="6nIO4pkch6C" resolve="model" />
                 </node>
@@ -446,13 +453,15 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcm9I" role="2OqNvi">
-                    <ref role="37wK5l" to="icf3:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="u8gfJ" id="6nIO4pkd4GC" role="3cqZAp">
-              <node concept="3clFbF" id="6nIO4pkcN7o" role="u8lrQ">
+            <node concept="1X3_iC" id="4XCxSiYlvoI" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6nIO4pkcN7o" role="8Wnug">
                 <node concept="2OqwBi" id="6nIO4pkcNmi" role="3clFbG">
                   <node concept="37vLTw" id="6nIO4pkcN7m" role="2Oq$k0">
                     <ref role="3cqZAo" node="1bbuGTsMPj3" resolve="graph" />
@@ -465,7 +474,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcOnW" role="2OqNvi">
-                          <ref role="37wK5l" to="icf3:~TemplateModule.getModels():java.util.Collection" resolve="getModels" />
+                          <ref role="37wK5l" to="r99j:~TemplateModule.getModels():java.util.Collection" resolve="getModels" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcQyB" role="3uHU7B">
@@ -485,7 +494,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6nIO4pkcS0w" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoJ" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6nIO4pkcS0w" role="8Wnug">
                 <node concept="2OqwBi" id="6nIO4pkcS0x" role="3clFbG">
                   <node concept="37vLTw" id="6nIO4pkcS0y" role="2Oq$k0">
                     <ref role="3cqZAo" node="1bbuGTsMPj3" resolve="graph" />
@@ -498,7 +511,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcS0B" role="2OqNvi">
-                          <ref role="37wK5l" to="icf3:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
+                          <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcS0C" role="3uHU7B">
@@ -518,7 +531,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6nIO4pkcR9q" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoK" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6nIO4pkcR9q" role="8Wnug">
                 <node concept="2OqwBi" id="6nIO4pkcR9r" role="3clFbG">
                   <node concept="37vLTw" id="6nIO4pkcR9s" role="2Oq$k0">
                     <ref role="3cqZAo" node="1bbuGTsMPj3" resolve="graph" />
@@ -531,7 +548,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcR9x" role="2OqNvi">
-                          <ref role="37wK5l" to="n55e:~GeneratorRuntime.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                          <ref role="37wK5l" to="vndm:~GeneratorRuntime.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcR9y" role="3uHU7B">
@@ -551,7 +568,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6nIO4pkcoTS" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoL" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6nIO4pkcoTS" role="8Wnug">
                 <node concept="2OqwBi" id="6nIO4pkcoVN" role="3clFbG">
                   <node concept="37vLTw" id="6nIO4pkcoTQ" role="2Oq$k0">
                     <ref role="3cqZAo" node="1bbuGTsMPj3" resolve="graph" />
@@ -569,7 +590,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpval" id="6nIO4pkcpeV" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoM" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="2Gpval" id="6nIO4pkcpeV" role="8Wnug">
                 <node concept="2GrKxI" id="6nIO4pkcpeX" role="2Gsz3X">
                   <property role="TrG5h" value="employed" />
                 </node>
@@ -611,7 +636,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkcpeX" resolve="employed" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkcsuy" role="2OqNvi">
-                                <ref role="37wK5l" to="icf3:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
                               </node>
                             </node>
                           </node>
@@ -628,11 +653,15 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcqmb" role="2OqNvi">
-                    <ref role="37wK5l" to="icf3:~TemplateModule.getEmployedGenerators():java.util.Collection" resolve="getEmployedGenerators" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getEmployedGenerators():java.util.Collection" resolve="getEmployedGenerators" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6nIO4pkcsOB" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoN" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6nIO4pkcsOB" role="8Wnug">
                 <node concept="2OqwBi" id="6nIO4pkcsOC" role="3clFbG">
                   <node concept="37vLTw" id="6nIO4pkcsOD" role="2Oq$k0">
                     <ref role="3cqZAo" node="1bbuGTsMPj3" resolve="graph" />
@@ -650,7 +679,11 @@
                   </node>
                 </node>
               </node>
-              <node concept="2Gpval" id="6nIO4pkcsOm" role="u8lrQ">
+            </node>
+            <node concept="1X3_iC" id="4XCxSiYlvoO" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="2Gpval" id="6nIO4pkcsOm" role="8Wnug">
                 <node concept="2GrKxI" id="6nIO4pkcsOn" role="2Gsz3X">
                   <property role="TrG5h" value="extended" />
                 </node>
@@ -692,7 +725,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkcsOn" resolve="extended" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkcJ7f" role="2OqNvi">
-                                <ref role="37wK5l" to="icf3:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
                               </node>
                             </node>
                           </node>
@@ -709,7 +742,7 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcsOA" role="2OqNvi">
-                    <ref role="37wK5l" to="icf3:~TemplateModule.getExtendedGenerators():java.util.Collection" resolve="getExtendedGenerators" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getExtendedGenerators():java.util.Collection" resolve="getExtendedGenerators" />
                   </node>
                 </node>
               </node>
@@ -732,7 +765,7 @@
                             <ref role="2Gs0qQ" node="6nIO4pkd4g2" resolve="prio" />
                           </node>
                           <node concept="liA8E" id="6nIO4pkdi_a" role="2OqNvi">
-                            <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                           </node>
                         </node>
                         <node concept="3cpWs3" id="6nIO4pkd4g8" role="3uHU7B">
@@ -765,7 +798,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkd4g2" resolve="prio" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkdgGu" role="2OqNvi">
-                                <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                               </node>
                             </node>
                           </node>
@@ -783,7 +816,7 @@
                   <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                 </node>
                 <node concept="liA8E" id="6nIO4pkd4gp" role="2OqNvi">
-                  <ref role="37wK5l" to="icf3:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
+                  <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
                 </node>
               </node>
             </node>
@@ -793,7 +826,7 @@
               <ref role="3cqZAo" node="6nIO4pkc0m4" resolve="plan" />
             </node>
             <node concept="liA8E" id="6nIO4pkclp2" role="2OqNvi">
-              <ref role="37wK5l" to="i6ta:~GenerationPlan.getGenerators():java.util.Collection" resolve="getGenerators" />
+              <ref role="37wK5l" to="tft2:~GenerationPlan.getGenerators():java.util.Collection" resolve="getGenerators" />
             </node>
           </node>
         </node>

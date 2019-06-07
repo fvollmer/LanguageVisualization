@@ -14,9 +14,10 @@
       <scope_type scope_type="project_scope" module="&lt;default&gt;" model="&lt;default&gt;" />
     </option>
   </component>
+  <component name="MPSFavoritesManager">
+    <option name="keepMe" value="true" />
+  </component>
   <component name="ProjectModuleManager">
     <modules />
   </component>
-  <component name="ProjectRootManager" version="2" />
 </project>
-
