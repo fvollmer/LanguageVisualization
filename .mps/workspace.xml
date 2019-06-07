@@ -7,14 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list id="3c75bb09-858d-419d-aef1-9f25c55ed737" name="generated" comment="" />
-    <list default="true" id="5590f457-f8df-4cca-a760-ce992cfa42ca" name="Default" comment="Migrate to MPS 2017.3">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/languages/SandboxLanguage/SandboxLanguage.mpl" afterPath="$PROJECT_DIR$/languages/SandboxLanguage/SandboxLanguage.mpl" />
-      <change beforePath="$PROJECT_DIR$/languages/SandboxLanguage/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/SandboxLanguage/languageModels/structure.mps" />
-      <change beforePath="$PROJECT_DIR$/languages/jetbrains.mps.generatorvisualization/jetbrains.mps.generatorvisualization.mpl" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.generatorvisualization/jetbrains.mps.generatorvisualization.mpl" />
-      <change beforePath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.mpl" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.mpl" />
-      <change beforePath="$PROJECT_DIR$/solutions/LanguageVisualization.build/LanguageVisualization.build.msd" afterPath="$PROJECT_DIR$/solutions/LanguageVisualization.build/LanguageVisualization.build.msd" />
-      <change beforePath="$PROJECT_DIR$/solutions/LanguageVisualization.build/models/LanguageVisualization/build.mps" afterPath="$PROJECT_DIR$/solutions/LanguageVisualization.build/models/LanguageVisualization/build.mps" />
+    <list default="true" id="5590f457-f8df-4cca-a760-ce992cfa42ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/SandboxLanguage/SandboxLanguage.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/SandboxLanguage/SandboxLanguage.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/jetbrains.mps.generatorvisualization/jetbrains.mps.generatorvisualization.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.generatorvisualization/jetbrains.mps.generatorvisualization.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/generator/template/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/generator/template/main@generator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/LanguageVisualization.build/LanguageVisualization.build.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/LanguageVisualization.build/LanguageVisualization.build.msd" afterDir="false" />
     </list>
     <ignored path="LanguageVisualization.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -202,11 +201,11 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="b8567056-14ab-4d55-a3dd-c6ce6b8b7a13/r:01fb9f31-389a-40f2-bfe3-d5fb7e6e1da4(TempModuleb8567056-14ab-4d55-a3dd-c6ce6b8b7a13/TempModel_3826701652833017)">
+            <model ref="3356d84c-dc78-4e01-aff5-39939b2f2049/r:a5715e39-d173-4524-9eaa-07e18d4e33b9(TempModule3356d84c-dc78-4e01-aff5-39939b2f2049/TempModel_3826879609229087)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
-                <use id="a5e4de53-46a3-44da-aab3-68fdf1c34ed0" name="jetbrains.mps.console.ideCommands" version="1" />
+                <use id="a5e4de53-46a3-44da-aab3-68fdf1c34ed0" name="jetbrains.mps.console.ideCommands" version="2" />
                 <use id="995a7394-7f76-4b8b-a929-c53448708106" name="jetbrains.mps.console.internalCommands" version="0" />
                 <use id="f26691d2-0def-4c06-aec6-2cb90c4af0a4" name="jetbrains.mps.console.scripts" version="0" />
                 <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -236,13 +235,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1G6_ii99CDx">
-                <node concept="3balQm" id="1G6_ii99CDy" role="aymYE" />
-                <node concept="2Clz$F" id="1G6_ii99CDz" role="aymYO">
+              <node concept="aymSD" id="4OIeWBaADqN">
+                <node concept="3balQm" id="4OIeWBaADqO" role="aymYE" />
+                <node concept="2Clz$F" id="4OIeWBaADqP" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="1G6_ii99CD$" role="1PhJh3">
-                  <ref role="2_V_lI" node="1G6_ii99CDz" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="4OIeWBaADqQ" role="1PhJh3">
+                  <ref role="2_V_lI" node="4OIeWBaADqP" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -343,8 +342,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="-1" />
     <option name="width" value="1924" />
     <option name="height" value="1177" />
   </component>
@@ -662,21 +659,10 @@
     <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -685,18 +671,14 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9399b10c-3935-4a26-a5db-afba75c1912e(SandboxLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d55a2538-abe3-48b4-b952-33ee4084f3cf(SandboxLanguage.structure) in IdeaFile{file:///home/vollmer/MPSProjects/LanguageVisualization/languages/SandboxLanguage/languageModels/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9399b10c-3935-4a26-a5db-afba75c1912e(SandboxLanguage)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -710,50 +692,9 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="671fae57-a26e-4040-a1a3-542a26fc8226(jetbrains.mps.langvisualization)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:0a67e63b-d7ed-48c9-9fd4-d6d1ced37ad3(jetbrains.mps.langvisualization.structure) in IdeaFile{file:///home/vollmer/MPSProjects/LanguageVisualization/languages/jetbrains.mps.langvisualization/languageModels/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9399b10c-3935-4a26-a5db-afba75c1912e(SandboxLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9399b10c-3935-4a26-a5db-afba75c1912e(SandboxLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d55a2538-abe3-48b4-b952-33ee4084f3cf(SandboxLanguage.structure) in IdeaFile{file:///home/vollmer/MPSProjects/LanguageVisualization/languages/SandboxLanguage/languageModels/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4923781053093035140" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -808,8 +749,6 @@
       <MyState />
       <myJUnitSettings>
         <MyState>
-          <option name="myModel" />
-          <option name="myModule" />
           <option name="myModelRef" />
           <option name="myModuleRef" />
           <option name="myInProcess" value="true" />
@@ -840,118 +779,77 @@
         </MyState>
       </myJavaRunParameters>
     </configuration>
-    <configuration default="true" type="Build Script" factoryName="Build Script">
-      <MyState />
-      <myNodePointer>
-        <MyState>
-          <option name="myNodePointer" />
-          <option name="myNodeText" />
-        </MyState>
-      </myNodePointer>
-      <mySettings>
-        <MyState>
-          <option name="myUseOtherAntLocation" value="false" />
-          <option name="myOtherAntLocation" />
-          <option name="myAntOptions" />
-        </MyState>
-      </mySettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="MPS" factoryName="MPS Instance">
-      <MyState />
-      <myMpsSettings>
-        <MyState>
-          <option name="myVmOptions" />
-          <option name="myJrePath" />
-          <option name="mySystemPath" value="$USER_HOME$/.MPSDebug33/system" />
-          <option name="myConfigurationPath" value="$USER_HOME$/.MPSDebug33/config" />
-          <option name="myOpenCurrentProject" value="false" />
-          <option name="myProjectToOpen" />
-        </MyState>
-      </myMpsSettings>
-      <myPluginsSettings>
-        <MyState>
-          <option name="myPluginsToDeploy">
-            <list />
-          </option>
-        </MyState>
-      </myPluginsSettings>
-      <method />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Build Script.LanguageVisualization" />
-      <item index="1" class="java.lang.String" itemvalue="MPS.MPS Debug" />
+    <list>
+      <item itemvalue="Build Script.LanguageVisualization" />
+      <item itemvalue="MPS.MPS Debug" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Build Script.LanguageVisualization" />
+      <list>
+        <item itemvalue="Build Script.LanguageVisualization" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-1" width="1924" height="1177" extended-state="0" />
+    <frame x="0" y="0" width="1924" height="1177" extended-state="0" />
     <layout>
-      <window_info id="Visualization" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33020833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Diagram Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939035" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Menu Trace" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939035" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Context Actions 2" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Chart" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3357598" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33393994" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Review" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Graphing" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Trace Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Visualisation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Graph Viewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CBMC raw result" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Context Sidebar" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Node Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Workflow" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Variabiity Consistency Verification" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CBMC Lifted Results" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Visualization" order="3" weight="0.33020833" />
+      <window_info anchor="bottom" id="Bookmarks" order="7" />
+      <window_info anchor="right" id="Diagram Palette" order="3" />
+      <window_info anchor="bottom" id="Model Checker" order="7" sideWeight="0.49166667" weight="0.32939035" />
+      <window_info anchor="bottom" id="Menu Trace" order="8" />
+      <window_info anchor="bottom" id="Migration" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Generation Tracer" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Class Hierarchy" order="3" />
+      <window_info anchor="bottom" id="Module Dependencies" order="7" />
+      <window_info anchor="right" id="Search" order="3" />
+      <window_info anchor="bottom" id="Console" order="7" />
+      <window_info anchor="right" id="Tree" order="3" />
+      <window_info anchor="bottom" id="Inspector" order="7" sideWeight="0.5083333" side_tool="true" weight="0.32939035" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Usages" order="7" />
+      <window_info anchor="bottom" id="Chart" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49791667" weight="0.3357598" />
+      <window_info anchor="right" id="Context Actions" order="4" />
+      <window_info active="true" anchor="bottom" id="Documentation" order="8" visible="true" weight="0.3357598" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32929105" />
+      <window_info anchor="right" id="Code Review" order="4" />
+      <window_info anchor="bottom" id="RefactoringView" order="7" />
+      <window_info anchor="bottom" id="Node Explorer" order="7" />
+      <window_info anchor="bottom" id="Typechecker State" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="right" id="Supertypes" order="3" />
+      <window_info anchor="bottom" id="mbeddr TODO" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Typesystem Trace" order="3" />
+      <window_info anchor="bottom" id="Trace Explorer" order="8" />
+      <window_info anchor="right" id="Visualisation" order="4" />
+      <window_info anchor="bottom" id="Classpath Explorer" order="7" />
+      <window_info anchor="bottom" id="Cell Explorer" order="7" />
+      <window_info anchor="bottom" id="Dependencies Viewer" order="7" />
+      <window_info anchor="right" id="Graph Viewer" order="3" />
+      <window_info anchor="right" id="Context Actions 2" order="4" />
+      <window_info anchor="right" id="Variabiity Consistency Verification" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="CBMC raw result" order="7" />
+      <window_info anchor="bottom" id="Node Info" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32929105" />
+      <window_info anchor="right" id="Context Sidebar" order="3" />
+      <window_info anchor="right" id="Workflow" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="CBMC Lifted Results" order="3" />
+      <window_info anchor="bottom" id="Changes" order="7" weight="0.32772365" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Graphing" order="4" />
     </layout>
   </component>
   <component name="UsagesViewTool">
@@ -987,6 +885,26 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="mps://node://SandboxLanguage/SandboxLanguage.structure/visualization">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://SandboxLanguage/SandboxLanguage.structure/visualization">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -3111,9 +3029,7 @@
       </provider>
     </entry>
     <entry file="mps://node://jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.structure/ConceptReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="MPSFileEditor" />
     </entry>
     <entry file="mps://node://SandboxLanguage/SandboxLanguage.structure/Bar">
       <provider selected="true" editor-type-id="MPSFileEditor">
