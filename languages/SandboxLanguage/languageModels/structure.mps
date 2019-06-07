@@ -41,6 +41,11 @@
     <property role="EcuMT" value="4923781053093013403" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="4hkMcvdqhbM">
+    <property role="TrG5h" value="Bar" />
+    <property role="EcuMT" value="4923781053093057266" />
+    <ref role="1TJDcQ" node="4hkMcvdq6ur" resolve="Foo" />
+  </node>
   <node concept="20SNEU" id="4hkMcvdqbM4">
     <property role="TrG5h" value="visualization" />
     <property role="IqYs6" value="true" />
@@ -48,11 +53,6 @@
     <node concept="IQbw5" id="4xh3sSBdPIo" role="f$kfi">
       <ref role="IQbw4" node="4hkMcvdq6ur" resolve="Foo" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="4hkMcvdqhbM">
-    <property role="TrG5h" value="Bar" />
-    <property role="EcuMT" value="4923781053093057266" />
-    <ref role="1TJDcQ" node="4hkMcvdq6ur" resolve="Foo" />
   </node>
 </model>
 
