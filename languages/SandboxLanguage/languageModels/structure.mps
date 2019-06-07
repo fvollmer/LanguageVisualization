@@ -2,7 +2,7 @@
 <model ref="r:d55a2538-abe3-48b4-b952-33ee4084f3cf(SandboxLanguage.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="671fae57-a26e-4040-a1a3-542a26fc8226" name="jetbrains.mps.langvisualization" version="0" />
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
@@ -45,7 +45,7 @@
     <property role="TrG5h" value="visualization" />
     <property role="IqYs6" value="true" />
     <property role="fxyDA" value="lang" />
-    <node concept="IQbw5" id="4hkMcvdqhbH" role="f$kfi">
+    <node concept="IQbw5" id="4xh3sSBdPIo" role="f$kfi">
       <ref role="IQbw4" node="4hkMcvdq6ur" resolve="Foo" />
     </node>
   </node>
