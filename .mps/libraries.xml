@@ -11,14 +11,6 @@
             </Library>
           </value>
         </entry>
-        <entry key="modhdl">
-          <value>
-            <Library>
-              <option name="name" value="modhdl" />
-              <option name="path" value="${modhdl.home}" />
-            </Library>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
