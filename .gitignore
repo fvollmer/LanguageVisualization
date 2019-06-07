@@ -4,3 +4,8 @@ source_gen.caches
 test_gen
 test_gen.caches
 workspace.xml
+build/
+.gradle
+lib/
+mps/
+build/

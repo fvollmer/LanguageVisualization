@@ -3,11 +3,11 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
-        <entry key="mbeddr.plattform">
+        <entry key="com.mbeddr.platform">
           <value>
             <Library>
-              <option name="name" value="mbeddr.plattform" />
-              <option name="path" value="$PROJECT_DIR$/../mbeddr.platform" />
+              <option name="name" value="com.mbeddr.platform" />
+              <option name="path" value="$PROJECT_DIR$/lib/com.mbeddr.platform" />
             </Library>
           </value>
         </entry>

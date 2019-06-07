@@ -1,0 +1,67 @@
+import de.itemis.mps.gradle.*
+
+buildscript {
+    repositories {
+        maven { url 'https://nexus.ime.uni-luebeck.de/repository/mps-group/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.2+'
+    }
+}
+
+repositories {
+    maven { url 'https://nexus.ime.uni-luebeck.de/repository/mps-group/' }
+    mavenCentral()
+}
+
+group 'LanguageVisualization'
+description = 'A UML style visualization of the mps language structure'
+
+apply plugin: 'base'
+
+// Require java 8
+if(JavaVersion.current() != JavaVersion.VERSION_1_8){
+    throw new GradleException("Found Java" + JavaVersion.current() + ", but Java " + JavaVersion.VERSION_1_8 + " is requiered")
+}
+
+//def java_home = System.properties['java.home']
+//def jdk_home = java_home
+
+// Dependency versions
+ext.mpsVersion = '2018.3'
+ext.mbeddrPlatformVersion = "1.2.+"
+
+configurations {
+    projectDependencies
+	ant_lib
+	mps
+}
+
+dependencies {
+	projectDependencies "com.mbeddr:platform:$mbeddrPlatformVersion"
+	ant_lib "org.apache.ant:ant-junit:1.10.1"
+	mps "com.jetbrains:mps:$mpsVersion"
+}
+
+task downloadDependencies(type: Copy) {
+    dependsOn configurations.projectDependencies
+	description 'Download dependencies of project'
+    from {
+        configurations.projectDependencies.resolve().collect { zipTree(it) }
+	} into "lib"
+}
+
+task downloadMPS(type: Copy) {
+    dependsOn configurations.mps
+	description 'Download mps'
+    from {
+        configurations.mps.resolve().collect { zipTree(it) }
+	} into "mps"
+}
+
+
+task setup {
+    dependsOn downloadMPS
+    description 'Set up MPS project libraries.'
+}
