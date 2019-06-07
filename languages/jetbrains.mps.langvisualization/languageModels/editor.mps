@@ -2,7 +2,7 @@
 <model ref="r:c48f7a42-eaac-4dde-b6ef-cdc956b13ade(jetbrains.mps.langvisualization.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="t69c" ref="r:0a67e63b-d7ed-48c9-9fd4-d6d1ced37ad3(jetbrains.mps.langvisualization.structure)" />
@@ -59,7 +59,7 @@
   <node concept="24kQdi" id="1pUxTWSCzYO">
     <ref role="1XX52x" to="t69c:1pUxTWSCzYq" resolve="ConceptReference" />
     <node concept="1iCGBv" id="1pUxTWSCzYQ" role="2wV5jI">
-      <ref role="1NtTu8" to="t69c:1pUxTWSCzYr" />
+      <ref role="1NtTu8" to="t69c:1pUxTWSCzYr" resolve="concept" />
       <node concept="1sVBvm" id="1pUxTWSCzYR" role="1sWHZn">
         <node concept="3F0A7n" id="1pUxTWSCzYW" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -125,7 +125,7 @@
       </node>
       <node concept="3F2HdR" id="6Wsjv5wzFaU" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="t69c:6Wsjv5wzgSz" />
+        <ref role="1NtTu8" to="t69c:6Wsjv5wzgSz" resolve="includedConcepts" />
         <node concept="l2Vlx" id="6Wsjv5wzFaV" role="2czzBx" />
         <node concept="pVoyu" id="6Wsjv5wzFb9" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -148,7 +148,7 @@
       </node>
       <node concept="3F2HdR" id="1mlQ_vMsWtE" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="t69c:1mlQ_vMsVue" />
+        <ref role="1NtTu8" to="t69c:1mlQ_vMsVue" resolve="excludedConcepts" />
         <node concept="pVoyu" id="1mlQ_vMsWtS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
