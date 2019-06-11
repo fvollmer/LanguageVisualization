@@ -2,7 +2,7 @@ import de.itemis.mps.gradle.*
 
 buildscript {
     repositories {
-        maven { url 'https://nexus.ime.uni-luebeck.de/repository/mps-group/' }
+        maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
         mavenCentral()
     }
     dependencies {
@@ -11,7 +11,7 @@ buildscript {
 }
 
 repositories {
-    maven { url 'https://nexus.ime.uni-luebeck.de/repository/mps-group/' }
+    maven { url 'https://projects.itemis.de/nexus/content/repositories/mbeddr' }
     mavenCentral()
 }
 
