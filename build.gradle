@@ -22,13 +22,14 @@ apply plugin: 'base'
 
 // Require java 8
 if(JavaVersion.current() != JavaVersion.VERSION_1_8){
-    throw new GradleException("Found Java" + JavaVersion.current() + ", but Java " + JavaVersion.VERSION_1_8 + " is requiered")
+    throw new GradleException("Found Java ${JavaVersion.current()}, but Java ${JavaVersion.VERSION_1_8} is requiered")
 }
-
 
 // Dependency versions
 ext.mpsVersion = '2018.3'
-ext.mbeddrPlatformVersion = "1.2.+"
+ext.mbeddrPlatformVersion = '1.2.+'
+
+ext.incrementalBuild = !project.hasProperty('disableIncrementalBuild')
 
 configurations {
     projectDependencies
@@ -38,33 +39,16 @@ configurations {
 
 dependencies {
 	projectDependencies "com.mbeddr:platform:$mbeddrPlatformVersion"
-	ant_lib "org.apache.ant:ant-junit:1.9.7"
+	ant_lib "org.apache.ant:ant-junit:1.20.+"
 	mps "com.jetbrains:mps:$mpsVersion"
 }
-
- 
-// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
-def java_home = System.properties['java.home']
-def jdk_home = java_home
-if (!file("$jdk_home/lib/tools.jar").isFile()) {
-    jdk_home = jdk_home + "/.."
-}
-if (!file("$jdk_home/lib/tools.jar").isFile()) {
-    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
-}
-ext.jdk_home = jdk_home
-
-// add ant to classpath
-ext.buildScriptClasspath = project.configurations.ant_lib.fileCollection({true}) + project.files("$project.jdk_home/lib/tools.jar")
-// set default classpath
-ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = buildScriptClasspath
 
 task downloadDependencies(type: Copy) {
     dependsOn configurations.projectDependencies
 	description 'Download dependencies of project'
     from {
         configurations.projectDependencies.resolve().collect { zipTree(it) }
-	} into "lib"
+	} into 'lib'
 }
 
 task downloadMPS(type: Copy) {
@@ -72,16 +56,12 @@ task downloadMPS(type: Copy) {
 	description 'Download mps'
     from {
         configurations.mps.resolve().collect { zipTree(it) }
-	} into "mps"
+	} into 'mps'
 }
 
-task build_project(type: BuildLanguages, dependsOn: [downloadDependencies, downloadMPS]) {
-    script "build.xml"
-}
 
-task setup {
-    dependsOn downloadMPS
-    description 'Set up MPS project libraries.'
-}
+ant.importBuild('build.xml') { target -> 'ant-' + target }
 
-defaultTasks 'build_project'
+tasks['ant-declare-mps-tasks'].dependsOn downloadMPS, downloadDependencies
+
+defaultTasks 'ant-generate'
