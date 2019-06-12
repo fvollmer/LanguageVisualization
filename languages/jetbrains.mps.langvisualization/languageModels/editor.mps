@@ -99,6 +99,15 @@
       <node concept="3F0A7n" id="6Wsjv5wzFcd" role="3EZMnx">
         <ref role="1NtTu8" to="t69c:6Wsjv5wzbZc" resolve="showInterfaces" />
       </node>
+      <node concept="3F0ifn" id="5K89Dc2ctgc" role="3EZMnx">
+        <property role="3F0ifm" value="Show behaviour methods:" />
+        <node concept="pVoyu" id="5K89Dc2ctnS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5K89Dc2ctu8" role="3EZMnx">
+        <ref role="1NtTu8" to="t69c:5K89Dc2c7I1" resolve="showMethods" />
+      </node>
       <node concept="3F0ifn" id="6Wsjv5wAAuJ" role="3EZMnx">
         <property role="3F0ifm" value="Map UML Packages to:" />
         <node concept="pVoyu" id="6Wsjv5wAAw3" role="3F10Kt">

@@ -14,12 +14,10 @@
   <registry>
     <language id="671fae57-a26e-4040-a1a3-542a26fc8226" name="jetbrains.mps.langvisualization">
       <concept id="6815333179373115344" name="jetbrains.mps.langvisualization.structure.LanguageVisualization" flags="ng" index="20SNEU">
+        <property id="6815333179373115353" name="showImported" index="20SNEN" />
         <property id="8006359936661088151" name="packageMapping" index="fxyDA" />
         <property id="240207913782510805" name="includeSubconcepts" index="IqYs6" />
-        <child id="8006359936660213283" name="includedConcepts" index="f$kfi" />
-      </concept>
-      <concept id="1619756133912821658" name="jetbrains.mps.langvisualization.structure.ConceptReference" flags="ng" index="IQbw5">
-        <reference id="1619756133912821659" name="concept" index="IQbw4" />
+        <property id="6631592864141835137" name="showMethods" index="1ue5Oi" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -50,9 +48,8 @@
     <property role="TrG5h" value="visualization" />
     <property role="IqYs6" value="true" />
     <property role="fxyDA" value="lang" />
-    <node concept="IQbw5" id="4xh3sSBdPIo" role="f$kfi">
-      <ref role="IQbw4" node="4hkMcvdq6ur" resolve="Foo" />
-    </node>
+    <property role="20SNEN" value="true" />
+    <property role="1ue5Oi" value="true" />
   </node>
 </model>
 
