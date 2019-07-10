@@ -2,10 +2,10 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/SandboxLanguage/SandboxLanguage.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.generatorvisualization/jetbrains.mps.generatorvisualization.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.langvisualization/jetbrains.mps.langvisualization.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/LanguageVisualization.build/LanguageVisualization.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/langvis.generator/langvis.generator.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/langvis.sandboxlanguage/langvis.sandboxlanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/langvis/langvis.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/languagevisualization.build/langvis.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
