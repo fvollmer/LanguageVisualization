@@ -272,7 +272,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="5UkVmFuu09M" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="2OqwBi" id="5UkVmFuu09N" role="37wK5m">
                 <node concept="37vLTw" id="5UkVmFuu09O" role="2Oq$k0">
                   <ref role="3cqZAo" node="1bbuGTsMfaD" resolve="graph" />
@@ -453,7 +453,7 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcm9I" role="2OqNvi">
-                    <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getAlias()" resolve="getAlias" />
                   </node>
                 </node>
               </node>
@@ -474,7 +474,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcOnW" role="2OqNvi">
-                          <ref role="37wK5l" to="r99j:~TemplateModule.getModels():java.util.Collection" resolve="getModels" />
+                          <ref role="37wK5l" to="r99j:~TemplateModule.getModels()" resolve="getModels" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcQyB" role="3uHU7B">
@@ -511,7 +511,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcS0B" role="2OqNvi">
-                          <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
+                          <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities()" resolve="getPriorities" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcS0C" role="3uHU7B">
@@ -548,7 +548,7 @@
                           <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                         </node>
                         <node concept="liA8E" id="6nIO4pkcR9x" role="2OqNvi">
-                          <ref role="37wK5l" to="vndm:~GeneratorRuntime.getModuleReference():org.jetbrains.mps.openapi.module.SModuleReference" resolve="getModuleReference" />
+                          <ref role="37wK5l" to="vndm:~GeneratorRuntime.getModuleReference()" resolve="getModuleReference" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="6nIO4pkcR9y" role="3uHU7B">
@@ -636,7 +636,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkcpeX" resolve="employed" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkcsuy" role="2OqNvi">
-                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias()" resolve="getAlias" />
                               </node>
                             </node>
                           </node>
@@ -653,7 +653,7 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcqmb" role="2OqNvi">
-                    <ref role="37wK5l" to="r99j:~TemplateModule.getEmployedGenerators():java.util.Collection" resolve="getEmployedGenerators" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getEmployedGenerators()" resolve="getEmployedGenerators" />
                   </node>
                 </node>
               </node>
@@ -725,7 +725,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkcsOn" resolve="extended" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkcJ7f" role="2OqNvi">
-                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias():java.lang.String" resolve="getAlias" />
+                                <ref role="37wK5l" to="r99j:~TemplateModule.getAlias()" resolve="getAlias" />
                               </node>
                             </node>
                           </node>
@@ -742,7 +742,7 @@
                     <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                   </node>
                   <node concept="liA8E" id="6nIO4pkcsOA" role="2OqNvi">
-                    <ref role="37wK5l" to="r99j:~TemplateModule.getExtendedGenerators():java.util.Collection" resolve="getExtendedGenerators" />
+                    <ref role="37wK5l" to="r99j:~TemplateModule.getExtendedGenerators()" resolve="getExtendedGenerators" />
                   </node>
                 </node>
               </node>
@@ -765,7 +765,7 @@
                             <ref role="2Gs0qQ" node="6nIO4pkd4g2" resolve="prio" />
                           </node>
                           <node concept="liA8E" id="6nIO4pkdi_a" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
                           </node>
                         </node>
                         <node concept="3cpWs3" id="6nIO4pkd4g8" role="3uHU7B">
@@ -798,7 +798,7 @@
                                 <ref role="2Gs0qQ" node="6nIO4pkd4g2" resolve="prio" />
                               </node>
                               <node concept="liA8E" id="6nIO4pkdgGu" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
                               </node>
                             </node>
                           </node>
@@ -816,7 +816,7 @@
                   <ref role="2Gs0qQ" node="6nIO4pkclcb" resolve="generator" />
                 </node>
                 <node concept="liA8E" id="6nIO4pkd4gp" role="2OqNvi">
-                  <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities():java.util.Collection" resolve="getPriorities" />
+                  <ref role="37wK5l" to="r99j:~TemplateModule.getPriorities()" resolve="getPriorities" />
                 </node>
               </node>
             </node>
@@ -826,7 +826,7 @@
               <ref role="3cqZAo" node="6nIO4pkc0m4" resolve="plan" />
             </node>
             <node concept="liA8E" id="6nIO4pkclp2" role="2OqNvi">
-              <ref role="37wK5l" to="tft2:~GenerationPlan.getGenerators():java.util.Collection" resolve="getGenerators" />
+              <ref role="37wK5l" to="tft2:~GenerationPlan.getGenerators()" resolve="getGenerators" />
             </node>
           </node>
         </node>
