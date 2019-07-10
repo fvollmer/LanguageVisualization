@@ -28,7 +28,7 @@ Install the mbeddr platform plugin from [https://github.com/mbeddr/mbeddr.core/r
   - virtual packages
 
 ## Usage
-Import the language ''jetbrains.mps.langvisualization'' to your structure model (Ctrl + L). Add a new ''language visualization node'' to the structure model and name it as you like. Select the new node an choose from its conext meu "Visualize" (Ctrl + Alt + V). The mbeddr Visualization panel should be opened. You can click on elements of the UML diagram to navigate through your language.
+Import the language `langvis` to your structure model (Ctrl + L). Add a new "language visualization node" to the structure model and name it as you like. Select the new node an choose from its conext menu "Visualize" (Ctrl + Alt + V). The mbeddr Visualization panel should be opened. You can click on elements of the UML diagram to navigate through your language.
 
 ## State
 Note: This is the first shot for this language. There are lots of possibilities to improve it. Everybody is welcome to add some code or share ideas.
