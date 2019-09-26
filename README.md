@@ -11,6 +11,14 @@ This repository is a fork of https://github.com/maystar/LanguageVisualization. I
 ## Installation
 Builds are provided as `com.felixvollmer.langvis` in the [maven repository of this project](https://github.com/fvollmer/LanguageVisualization/packages/). You also need to install `com.mbeddr.platform` which is available from the [itimis nexus](https://projects.itemis.de/nexus/#view-repositories;mbeddr~browsestorage).
 
+## Build
+Run one of the following commands:
+```
+./gradlew # Mac and Linux
+gradlew.bat # Windows
+```
+All dependencies are downloaded automatically.
+
 ## Features
 - Map language structure concept to UML classes
   - Visualize abstract, final and rootable attributes
