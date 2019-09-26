@@ -9,7 +9,7 @@ This repository is a fork of https://github.com/maystar/LanguageVisualization. I
 <img src="./doc/tooling-screenshot.svg" width="600">
 
 ## Installation
-Builds are provided as `com.felixvollmer.langvis` in the [maven repository of this project](https://github.com/fvollmer/LanguageVisualization/packages/). You also need to install `com.mbeddr.platform` which is available from the [itimis nexus](https://projects.itemis.de/nexus/#view-repositories;mbeddr~browsestorage).
+Builds are provided as `com.felixvollmer.langvis` in the [maven repository of this project](https://github.com/fvollmer/LanguageVisualization/packages/). The versions correspond to the MPS version (e.g. 2019.1). You also need to install `com.mbeddr.platform` which is available from the [itimis nexus](https://projects.itemis.de/nexus/#view-repositories;mbeddr~browsestorage).
 
 ## Build
 Run one of the following commands:
