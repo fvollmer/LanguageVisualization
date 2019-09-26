@@ -105,14 +105,14 @@ publishing {
         maven {
             url project.publishingRepository
 			credentials {
-				username System.env.GITHUB_ACTOR
+				username 'x-access-token'
 				password System.env.GITHUB_TOKEN
 			}
         }
     }
     publications {
         langvis(MavenPublication) {
-            groupId 'xyz.vollmer'
+            groupId 'com.felixvollmer'
             artifactId 'langvis'
             artifact packageProject
             pom.withXml {
