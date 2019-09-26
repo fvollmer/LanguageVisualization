@@ -19,15 +19,34 @@ group 'LanguageVisualization'
 description = 'UML style visualization for the structure of mps languages'
 
 apply plugin: 'base'
+apply plugin: 'maven-publish'
 
 // Require java 8
 if(JavaVersion.current() != JavaVersion.VERSION_1_8){
     throw new GradleException("Found Java ${JavaVersion.current()}, but Java ${JavaVersion.VERSION_1_8} is requiered")
 }
 
+// Detect jdk location, required to start ant with tools.jar on classpath otherwise javac and tests will fail
+def java_home = System.properties['java.home']
+def jdk_home = java_home
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    jdk_home = jdk_home + "/.."
+}
+if (!file("$jdk_home/lib/tools.jar").isFile()) {
+    throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
+}
+ext.jdk_home = jdk_home
+
 // Dependency versions
 ext.mpsVersion = '2019.1.+'
 ext.mbeddrPlatformVersion = '1.3.+'
+
+def minor = '1'
+def major = '2019'
+
+def hash = GitBasedVersioning.getGitShortCommitHash()
+def buildNumber = new Date().format('yyyyMMddHHmmss')
+version = "$major.$minor.$buildNumber.$hash"
 
 ext.incrementalBuild = !project.hasProperty('disableIncrementalBuild')
 
@@ -39,9 +58,19 @@ configurations {
 
 dependencies {
 	projectDependencies "com.mbeddr:platform:$mbeddrPlatformVersion"
-	ant_lib "org.apache.ant:ant-junit:1.20.+"
+	ant_lib "org.apache.ant:ant-junit:1.10.+"
 	mps "com.jetbrains:mps:$mpsVersion"
 }
+
+// Default arguments
+def defaultScriptClasspath = 
+	project.configurations.ant_lib.fileCollection {true} +
+	project.files("$project.jdk_home/lib/tools.jar")
+ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
+ext["itemis.mps.gradle.ant.defaultScriptArgs"] = [
+	"-Dversion=" + version,
+	"-Dmps.generator.skipUnmodifiedModels=" + incrementalBuild
+]
 
 task downloadDependencies(type: Copy) {
     dependsOn configurations.projectDependencies
@@ -59,9 +88,53 @@ task downloadMPS(type: Copy) {
 	} into 'mps'
 }
 
+task buildProject(type: BuildLanguages, dependsOn: [downloadMPS, downloadDependencies]) {
+    script "./build.xml"
+}
 
-ant.importBuild('build.xml') { target -> 'ant-' + target }
+task packageProject(type: Zip, dependsOn: buildProject) {
+    baseName 'LanguageVisualization'
+    from "build/artifacts"
+    include 'LanguageVisualization/**'
+}
 
-tasks['ant-declare-mps-tasks'].dependsOn downloadMPS, downloadDependencies
+ext.publishingRepository = 'https://maven.pkg.github.com/fvollmer/LanguageVisualization'
 
-defaultTasks 'ant-generate'
+publishing {
+    repositories {
+        maven {
+            url project.publishingRepository
+			credentials {
+				username System.env.GITHUB_ACTOR
+				password System.env.GITHUB_TOKEN
+			}
+        }
+    }
+    publications {
+        langvis(MavenPublication) {
+            groupId 'xyz.vollmer'
+            artifactId 'langvis'
+            artifact packageProject
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.mps.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                }
+                configurations.projectDependencies.resolvedConfiguration.firstLevelModuleDependencies.each{
+                    def dependencyNode = dependenciesNode.appendNode('dependency')
+                    dependencyNode.appendNode('groupId', it.moduleGroup)
+                    dependencyNode.appendNode('artifactId', it.moduleName)
+                    dependencyNode.appendNode('version', it.moduleVersion)
+                    dependencyNode.appendNode('type', it.moduleArtifacts[0].type)
+                    dependencyNode.appendNode('scope', 'provided')
+                }
+            }
+        }
+    }
+}
+
+defaultTasks 'buildProject'
