@@ -47,7 +47,18 @@ def major = '2019'
 def hash = GitBasedVersioning.getGitShortCommitHash()
 def buildNumber = new Date().format('yyyyMMddHHmmss')
 version = "$major.$minor.$buildNumber.$hash"
-def branch = GitBasedVersioning.getGitBranch()
+
+def branch
+if (System.env.GITHUB_REF) {
+	// github actions work in detached head mode
+	// we have to ask the env variable to get the branch
+	branch = System.env.GITHUB_REF
+	// cut refs/heads/
+	branch = (branch =~ /refs\/heads\/(.+)/)[0][1]
+} else {
+	branch = GitBasedVersioning.getGitBranch()
+}
+
 if (branch != 'master') {
 	version = "$branch.$version"
 }
