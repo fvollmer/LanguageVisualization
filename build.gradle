@@ -47,6 +47,10 @@ def major = '2019'
 def hash = GitBasedVersioning.getGitShortCommitHash()
 def buildNumber = new Date().format('yyyyMMddHHmmss')
 version = "$major.$minor.$buildNumber.$hash"
+def branch = GitBasedVersioning.getGitBranch()
+if (branch != 'master') {
+	version = "$branch.$version"
+}
 
 ext.incrementalBuild = !project.hasProperty('disableIncrementalBuild')
 
